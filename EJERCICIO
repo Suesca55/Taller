@@ -1,0 +1,45 @@
+// Array
+let frutas = ['manzana', 'banana', 'pera'];
+console.log(frutas[0]); // 'manzana'
+console.log(frutas[2]); // 'pera'
+
+
+// map(): Retorna un nuevo array con los resultados de aplicar una función a cada
+//elemento del array original.
+
+let numeros = [1, 2, 3, 4];
+let dobles = numeros.map(num => num * 2);
+console.log(dobles); // [2, 4, 6, 8]
+
+//filter(): Crea un nuevo array con los elementos que cumplen con una
+//condición específica.
+let edades = [22, 17, 34, 15, 40];
+let mayores = edades.filter(edad => edad >= 18);
+console.log(mayores); // [22, 34, 40]
+
+//reduce(): Reduce el array a un único valor, aplicando una función
+//acumuladora.
+let valores = [10, 20, 30];
+let sumaTotal = valores.reduce((total, valor) => total + valor, 0);
+console.log(sumaTotal); // 60
+
+//Arrays Multidimensionales
+let matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+   ];
+   console.log(matriz[1][2]); // 6
+
+   //forEach(): Ejecuta una función para cada elemento del array.
+   let fruta = ['manzana', 'banana', 'pera'];
+    frutas.forEach(fruta => console.log(fruta));
+    for (let fruta of frutas) {
+        console.log(fruta);
+       }
+
+//Ejercicio: Dado un array de nombres, crea un nuevo array donde cada
+//nombre tenga todas sus letras en mayúsculas.
+let nombres = ['ana', 'juan', 'maria', 'pedro'];
+let nombresMayusculas = nombres.map(nombre => nombre.toUpperCase());
+console.log(nombresMayusculas); // ['ANA', 'JUAN', 'MARIA', 'PEDRO']
